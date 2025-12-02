@@ -1,6 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { SessionType } from "../types/sessionType";
 
+interface SessionType {
+    _id: string;
+    name: string;
+    isActive: boolean;
+    startDate: string;
+    endDate: string;
+}
 interface SessionState {
     recordData: SessionType[];
     loading: boolean;
