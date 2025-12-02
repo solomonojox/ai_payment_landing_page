@@ -1,5 +1,13 @@
 import { createContext } from "react";
-import type { Notification } from "../../types/notificationType";
+// import type { Notification } from "../../types/notificationType";
+
+interface Notification {
+  _id: string;
+  title: string;
+  message: string;
+  readBy: string[];
+  unread: boolean;
+}
 
 export interface NotificationContextType {
   notifications: Notification[];

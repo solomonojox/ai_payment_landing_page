@@ -25,7 +25,7 @@ import {
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/auth/useAuth";
 // import { ProfileService } from "../services/profileService";
-import LogoutModal from "./modals/LogoutModal";
+// import LogoutModal from "./modals/LogoutModal";
 
 interface SidebarProps {
     isCollapsed: boolean;
@@ -489,10 +489,10 @@ const Sidebar: React.FC<SidebarProps> = ({
                 ></div>
             </div>
 
-            <LogoutModal
+            {/* <LogoutModal
                 onCancel={() => setLogoutModal(false)}
                 isOpen={logoutModal}
-            />
+            /> */}
         </div>
     );
 };

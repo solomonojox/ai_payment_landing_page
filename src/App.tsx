@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
-import AdminLayout from "./layouts/AdminLayout";
+// import AdminLayout from "./layouts/AdminLayout";
 import { useAuth } from "./context/auth/useAuth";
 import AIVideoLandingPage from "./pages/AIVideoLandingPage";
 import VerifyPayment from "./pages/VerifyPayment";
@@ -105,13 +105,13 @@ function App() {
                     </ProtectedRoute>
                 } /> */}
 
-                <Route path="/admin" element={
+                {/* <Route path="/admin" element={
                     <ProtectedAdminRoute>
                         <AdminLayout />
                     </ProtectedAdminRoute>
                 }>
-                    {/* <Route path="dashboard" element={<AdminDashboard />} /> */}
-                </Route>
+                    <Route path="dashboard" element={<AdminDashboard />} />
+                </Route> */}
                 {/* Other public routes */}
                 {/* <Route path="/date" element={<DateRangePicker />} />
                 <Route path="/payments/verify" element={<VerifyPayment />} />

@@ -12,7 +12,7 @@ import {
 import { useAuth } from '../context/auth/useAuth';
 import { useNotifications } from '../context/notification/useNotifications';
 import { useLocation } from 'react-router-dom';
-import type { Notification } from '../types/notificationType';
+// import type { Notification } from '../types/notificationType';
 import { useTheme } from '../context/Theme/useTheme';
 
 interface NavbarProps {

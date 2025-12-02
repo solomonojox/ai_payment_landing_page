@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 // import Sidebar from "../components/Sidebar";
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import NotificationModal from "../components/modals/NotificationModal";
+// import Navbar from "../components/Navbar";
+// import NotificationModal from "../components/modals/NotificationModal";
 // import type { Notification } from "../types/notificationType";
 // import ChangePasswordPrompt from "../pages/Auth/ChangePasswordPrompt";
 import { useAuth } from "../context/auth/useAuth";
@@ -39,22 +39,22 @@ const AdminLayout: React.FC = () => {
                     }`}
             >
                 <div className="sticky top-0 z-10 bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                    <Navbar
+                    {/* <Navbar
                         toggleSidebar={toggleSidebar}
                         setSelectedNotification={setSelectedNotification}
                         setOpen={setOpen}
-                    />
+                    /> */}
                 </div>
 
                 <main className="px-2 lg:p-4">
                     <Outlet />
                 </main>
 
-                <NotificationModal
+                {/* <NotificationModal
                     open={open}
                     setOpen={setOpen}
                     notification={selectedNotification}
-                />
+                /> */}
 
                 {/* <ChangePasswordPrompt
                     open={openChangePasswordWarningModal}
