@@ -150,7 +150,7 @@ const AIVideoLandingPage: React.FC = () => {
                             {/* Pay with Paystack Section */}
                             {selectedOption === 'paystack' && (
                                 <form onSubmit={handlePayment} className="mb-8">
-                                    <input type="email" placeholder="Enter your email" className="w-full p-4 rounded-xl border border-gray-700/50 bg-gray-800/30 mb-4" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <input type="email" placeholder="Enter your email" className="w-full p-4 rounded-xl border border-gray-700/50 bg-gray-800/30 mb-4" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                     <button
                                         onClick={handlePayment}
                                         disabled={paymentInitiated}
