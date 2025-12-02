@@ -67,7 +67,7 @@ const AIVideoLandingPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-            <div className="container mx-auto px-4 py-12 max-w-4xl">
+            <div className="container mx-auto px-2 py-12 max-w-4xl">
                 {/* Header */}
                 <header className="text-center mb-16">
                     <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -85,7 +85,7 @@ const AIVideoLandingPage: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Left Column: Features and Info */}
                     <div>
-                        <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 mb-8">
+                        <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-4 lg:p-8 border border-gray-700/50 mb-8">
                             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                                 <Video className="w-6 h-6 text-blue-400" />
                                 What You Get
@@ -101,7 +101,7 @@ const AIVideoLandingPage: React.FC = () => {
                                 ))}
                             </ul>
 
-                            <div className="mt-8 p-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-xl border border-blue-700/30">
+                            <div className="mt-8 p-2 lg:p-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-xl border border-blue-700/30">
                                 <h3 className="text-xl font-bold mb-2">Pro Plan</h3>
                                 <div className="flex items-end gap-2 mb-4">
                                     <span className="text-4xl font-bold">₦1,500</span>
@@ -119,7 +119,7 @@ const AIVideoLandingPage: React.FC = () => {
 
                     {/* Right Column: Payment Options */}
                     <div>
-                        <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+                        <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-4 lg:p-8 border border-gray-700/50">
                             <h2 className="text-2xl font-bold mb-6">Choose Payment Method</h2>
 
                             {/* Payment Options Selection */}
