@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #5A38FD;
+    --color-hover: #0f172b;
+    --color-secondary: #6B4CFD;
+    --color-accent: #EFEBFF;
+    --color-success: #5CB85C;
+    --color-error: #F96658;
+    --color-warning: #DC6803;
+}
+
+/* Preserve default border */
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+@layer base {
+
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+.hide-message-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-message-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+body {
+    @apply bg-white text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+    @apply bg-gray-900 text-white;
+}
